@@ -2,6 +2,8 @@
 
 Welcome to the Olympic Games Data Hub! This project provides a comprehensive dataset of the Olympic Games from 1896 to 2022. The goal is to load, explore, and visualize this data using Snowflake, Snowflake Notebooks, and Streamlit. Fun fact: we'll load the dataset stored in this GitHub repository using External Integration Access. There's no need to download the dataset locally; we'll pull it directly from GitHub to Snowflake.
 
+**NOTE:** As soon as Cortex Analyst will be released in Public Preview, we'll use this dataset to build our Olympic Chat Bot! 
+
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/640px-Olympic_rings_without_rims.svg.png" alt="Olympic Rings" width="200"/>
 </p>
