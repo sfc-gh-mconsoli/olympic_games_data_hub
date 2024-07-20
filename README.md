@@ -2,11 +2,10 @@
 
 Welcome to the Olympic Games Data Hub! This project provides a comprehensive dataset of the Olympic Games from 1896 to 2022. The goal is to load, explore, and visualize this data using Snowflake, Snowflake Notebooks, and Streamlit. Fun fact: we'll load the dataset stored in this GitHub repository using External Integration Access. There's no need to download the dataset locally; we'll pull it directly from GitHub to Snowflake.
 
-**NOTE:** As soon as Cortex Analyst will be released in Public Preview, we'll use this dataset to build our Olympic Chat Bot! 
-
+**NOTE:** As soon as Cortex Analyst will be released in Public Preview, we'll use this dataset to build our Olympic Chat Bot! ... Stay Tuned ;) 
 <p align="center">
   <br>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/640px-Olympic_rings_without_rims.svg.png" alt="Olympic Rings" width="200"/>
+  <img src="https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/images/screenshot_app.png?raw=true" alt="Olympic Rings"/>
 </p>
 
 ## Getting Started
@@ -36,7 +35,12 @@ To explore and visualize the data using the Streamlit app, follow these steps:
   - Choose the **Database**: `OLYMPIC_GAMES`
   - Select the **Schema**: `RAW_DATA`
   - Choose the **Warehouse**: `OLYMPIC_GAMES_WH`
-  
+
+<p align="center">
+  <br>
+  <img src="https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/images/screenshot_create_app.png?raw=true" alt="Olympic Rings"/>
+</p>
+
 - **Add the App Code:**
   - [Download the script](https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/olympic_games_data_hub.py) or copy and paste the content of `olympic_games_data_hub.py`.
 
