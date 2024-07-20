@@ -5,6 +5,7 @@ Welcome to the Olympic Games Data Hub! This project provides a comprehensive dat
 **NOTE:** As soon as Cortex Analyst will be released in Public Preview, we'll use this dataset to build our Olympic Chat Bot! 
 
 <p align="center">
+  <br>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/640px-Olympic_rings_without_rims.svg.png" alt="Olympic Rings" width="200"/>
 </p>
 
