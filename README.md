@@ -1,2 +1,51 @@
-# olympics_games_data_hub
-Hands-On Lab: Building Olympic Games Analytics with Snowflake Notebooks, External Access Integrations, and Streamlit
+# 🏅 Olympic Games Data Hub 🏅
+
+Welcome to the Olympic Games Data Hub! This project provides a comprehensive dataset of the Olympic Games from 1896 to 2022. The goal is to load, explore, and visualize this data using Snowflake, Snowflake Notebooks, and Streamlit. Fun fact: we'll load the dataset stored in this GitHub repository using External Integration Access. There's no need to download the dataset locally; we'll pull it directly from GitHub to Snowflake.
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/640px-Olympic_rings_without_rims.svg.png" alt="Olympic Rings" width="200"/>
+</p>
+
+## Getting Started
+
+To get started with the Olympic Games Data Hub, follow these steps:
+
+### 1. Run Setup Script
+
+First, run the setup script to create the necessary database objects. This script sets up the database, schema, warehouse, and external access integration needed for the project.
+
+- [Download & Import setup.sql](https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/setup.sql)
+
+### 2. Push Data from GitHub to Tables
+
+Next, use the provided notebook to fetch the Olympic Games data from GitHub and push it into Snowflake tables. The notebook will handle the data ingestion and table creation.
+
+- [Download & Import the notebook](https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/olympic_games_ingest_explore.ipynb)
+
+### 3. Import the Streamlit App in Snowflake
+
+Finally, import the Streamlit app into Snowflake to explore and visualize the data. This app provides an interactive interface to analyze the Olympic Games data.
+
+- [Download & Import olympics_games_data_hub.py](https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/olympic_games_ingest_explore.ipynb)
+
+## Project Overview
+
+The Olympic Games Data Hub consists of the following components:
+
+- **setup.sql**: Script to set up the database, schema, warehouse, and external access integration.
+- **olympic_games_ingest_explore.ipynb**: Notebook to fetch data from GitHub and push it into Snowflake tables.
+- **olympics_games_data_hub.py**: Streamlit app for exploring and visualizing the Olympic Games data.
+
+## Requirements
+
+- Snowflake Trial Account
+
+## Usage
+
+1. Run `setup.sql` to create the necessary database objects.
+2. Use the notebook to fetch data from GitHub and push it into Snowflake tables.
+3. Import and run the Streamlit app in Snowflake for data exploration.
+
+---
+
+Enjoy exploring the Olympic Games data!
