@@ -5,7 +5,7 @@ Welcome to the Olympic Games Data Hub! This project provides a comprehensive dat
 **NOTE:** As soon as Cortex Analyst will be released in Public Preview, we'll use this dataset to build our Olympic Chat Bot! ... Stay Tuned ;) 
 <p align="center">
   <br>
-  <img src="https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/images/screenshot_app.png?raw=true" alt="Olympic Rings"/>
+  <img src="https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/images/streamlit_app.gif?raw=true" alt="Olympic Rings"/>
 </p>
 
 ## Getting Started
