@@ -68,7 +68,6 @@ if analysis == 'App Info':
 
     - **Athlete Participation Analysis**: Examine the number of events participated in by top athletes. Get insights into the participation patterns of Olympic athletes.
 
-    - **Medal Counts by City**: Explore the medal counts distributed across different host cities. Understand the impact of host cities on the medal tally.
     """)
     
     st.write('### Dataset Summary')
