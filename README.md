@@ -45,7 +45,7 @@ To explore and visualize the data using the Streamlit app, follow these steps:
 </p>
 
 - **Add the App Code:**
-  - [Download or Copy-Paste the script](https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/olympic_games_data_hub.py) or copy and paste the content of `olympic_games_data_hub.py`.
+  - [Download or Copy-Paste](https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/olympic_games_data_hub.py) the content of `olympic_games_data_hub.py`.
   - Import `plotly` package in the top left "Packages" button.
 
 
