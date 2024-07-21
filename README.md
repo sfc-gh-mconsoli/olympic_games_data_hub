@@ -23,7 +23,8 @@ First, run the setup script to create the necessary database objects. This scrip
 Next, use the provided notebook to fetch the Olympic Games data from GitHub and push it into Snowflake tables. The notebook will handle the data ingestion and table creation.
 
 - [Download & Import the notebook](https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/olympic_games_ingest_explore.ipynb)
-- Import plotly package in the top left "Packages" button.
+- Import `plotly` package in the top right "Packages" button.
+- Enable the External Access for GitHub (created in the previous step) from the Notebook Settings (three dots menu, top right).
   
 ### 3. Import the Streamlit App into Snowflake
 
@@ -45,7 +46,7 @@ To explore and visualize the data using the Streamlit app, follow these steps:
 
 - **Add the App Code:**
   - [Download the script](https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/olympic_games_data_hub.py) or copy and paste the content of `olympic_games_data_hub.py`.
-  - Import plotly package in the top right "Packages" button.
+  - Import `plotly` package in the top left "Packages" button.
 
 
 - **Run the App:**
