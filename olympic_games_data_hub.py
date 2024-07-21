@@ -46,7 +46,7 @@ analysis = st.sidebar.selectbox('Select Analysis', [
     'Performance Trends by Country',
     'Olympic Medals Distribution Over Time',
     'Top Athletes by Medals',
-    'Athlete Participation Analysis'
+    'Event Participation Analysis'
 ])
 
 if analysis == 'App Info':
@@ -60,15 +60,14 @@ if analysis == 'App Info':
     st.write("""
     - **Gold Medal Comparison by Country**: Compare the gold medal counts across different countries and editions. Visualize the performance of selected countries in a grouped bar chart.
 
-    - **Performance Trends by Country**: Analyze the performance trends of selected countries over the years, with separate lines for summer and winter editions.
+    - **Performance Trends by Country**: Analyze the performance trends of the selected country over the years, separate lines for summer and winter editions.
 
-    - **Olympic Medals Distribution Over Time**: View the distribution of gold, silver, and bronze medals over different years. Track the trends in medal counts through interactive line charts.
+    - **Olympic Medals Distribution Over Time**: View the distribution of gold, silver, and bronze medals over the history of Olympic Games. Track the trends in medal counts through interactive line charts.
 
     - **Top Athletes by Medals**: Discover the top athletes based on their medal counts. This section highlights the athletes with the most medals across different events.
 
-    - **Athlete Participation Analysis**: Examine the number of events participated in by top athletes. Get insights into the participation patterns of Olympic athletes.
-
-    """)
+    - **Event Participation Analysis**: Examine the number of athletes competing in the Olympic Games history. Get insights into the participation patterns of Olympic athletes.
+   """)
     
     st.write('### Dataset Summary')
     tables = ['OLYMPICS_COUNTRY', 'OLYMPIC_GAMES', 'OLYMPIC_ATHLETE_BIO', 'OLYMPIC_ATHLETE_EVENT_RESULTS', 'OLYMPIC_RESULTS', 'OLYMPIC_GAMES_MEDAL_TALLY']
@@ -182,24 +181,6 @@ elif analysis == 'Event Participation Analysis':
     
     # Plot
     plot_bar_chart(df, 'EDITION', 'NUM_PARTICIPANTS', 'Number of Participants per Winter Event', {'EVENT': 'Event', 'num_participants': 'Number of Participants'})
-
-elif analysis == 'Athlete Participation Analysis':
-    st.title('Athlete Participation Analysis')
-    
-    # Load the data
-    query = """
-    SELECT NAME, COUNT(DISTINCT EVENT) AS num_events
-    FROM OLYMPIC_ATHLETE_BIO
-    JOIN OLYMPIC_ATHLETE_EVENT_RESULTS ON OLYMPIC_ATHLETE_BIO.ATHLETE_ID = OLYMPIC_ATHLETE_EVENT_RESULTS.ATHLETE_ID
-    GROUP BY NAME
-    ORDER BY num_events DESC
-    LIMIT 10
-    """
-    df = run_query(query)
-    
-    # Plot
-    plot_bar_chart(df, 'NAME', 'num_events', 'Top 10 Athletes by Number of Events Participated', {'NAME': 'Athlete', 'num_events': 'Number of Events'})
-
 
 elif analysis == 'Performance Trends by Country':
     st.title('Performance Trends by Country')
