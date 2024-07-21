@@ -16,7 +16,7 @@ To get started with the Olympic Games Data Hub, follow these steps:
 
 First, run the setup script to create the necessary database objects. This script sets up the database, schema, warehouse, and external access integration needed for the project.
 
-- [Download & Import setup.sql](https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/setup.sql)
+- [Run setup.sql](https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/setup.sql)
 
 ### 2. Push Data from GitHub to Tables
 
@@ -45,7 +45,7 @@ To explore and visualize the data using the Streamlit app, follow these steps:
 </p>
 
 - **Add the App Code:**
-  - [Download the script](https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/olympic_games_data_hub.py) or copy and paste the content of `olympic_games_data_hub.py`.
+  - [Download or Copy-Paste the script](https://github.com/sfc-gh-mconsoli/olympic_games_data_hub/blob/main/olympic_games_data_hub.py) or copy and paste the content of `olympic_games_data_hub.py`.
   - Import `plotly` package in the top left "Packages" button.
 
 
