@@ -60,16 +60,11 @@ The Olympic Games Data Hub consists of the following components:
 - **setup.sql**: Script to set up the database, schema, warehouse, and external access integration.
 - **olympic_games_ingest_explore.ipynb**: Notebook to fetch data from GitHub and push it into Snowflake tables.
 - **olympics_games_data_hub.py**: Streamlit app for exploring and visualizing the Olympic Games data.
+- **dataset**: folder containing csv dataset that will be uploaded in your Snowflake account.
 
 ## Requirements
 
 - Snowflake Trial Account
-
-## Usage
-
-1. Run `setup.sql` to create the necessary database objects.
-2. Use the notebook to fetch data from GitHub and push it into Snowflake tables.
-3. Import and run the Streamlit app in Snowflake for data exploration.
 
 ---
 
