@@ -70,7 +70,7 @@ if analysis == 'App Info':
    """)
     
     st.write('### Dataset Summary')
-    tables = ['OLYMPICS_COUNTRY', 'OLYMPIC_GAMES', 'OLYMPIC_ATHLETE_BIO', 'OLYMPIC_ATHLETE_EVENT_RESULTS', 'OLYMPIC_RESULTS', 'OLYMPIC_GAMES_MEDAL_TALLY']
+    tables = ['OLYMPIC_COUNTRY', 'OLYMPIC_GAMES', 'OLYMPIC_ATHLETE_BIO', 'OLYMPIC_ATHLETE_EVENT_RESULTS', 'OLYMPIC_RESULTS', 'OLYMPIC_GAMES_MEDAL_TALLY']
     for table in tables:
         df = st.session_state.snowflake_connection.table(table).to_pandas()
         st.write(f"- **{table}**: (Rows: {len(df)} - Columns: {len(df.columns)})")
